@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.todo-app {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.add-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.add-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #66a6ff;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.add-form button {
+    padding: 10px 20px;
+    background: #66a6ff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add-form button:hover {
+    background: #558ed6;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background 0.3s;
+}
+
+.task-item.done {
+    background: #d4edda;
+    text-decoration: line-through;
+    color: #555;
+}
+
+.task-item:hover {
+    background: #e9f0ff;
+}
+
+.task-item span {
+    flex: 1;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.inline-form {
+    margin: 0;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff6b6b;
+    transition: transform 0.2s;
+}
+
+.delete-btn:hover {
+    transform: scale(1.2);
+}
+
+/* 追加するだけ */
+
+.add-form select {
+    padding: 10px;
+    border: 2px solid #66a6ff;
+    border-left: none;
+    border-right: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.task-info {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.due-date {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
